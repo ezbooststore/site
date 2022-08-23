@@ -9,18 +9,18 @@ function calc(){
 	
 	if(s1 >= s2)
 	{
-		$("#summ").val('Звания выбраны не верно!');
+		$("#summ").val('As patentes não estão corretas!');
 		flag = false;
 	}
 	else
 	{
 		full_summ = $("#s2 option:selected").attr('price') - $("#s1 option:selected").attr('price')
                 
-                if($("#onemore").prop("checked")) full_summ = full_summ * 1.3;
+                if($("#onemore").prop("checked")) full_summ = full_summ + 5;
                 if($("#skincheck").prop("checked")) full_summ = full_summ * 1.45;
-                if($("#lobbycheck").prop("checked")) full_summ = full_summ * 2;
-                if($("#fastcheck").prop("checked")) full_summ = full_summ * 2;
-		$("#summ").val(Math.round(full_summ)+' рублей');
+                if($("#lobbycheck").prop("checked")) full_summ = full_summ+((full_summ *30)/100) ;
+                if($("#fastcheck").prop("checked")) full_summ =  full_summ * 2;
+		$("#summ").val(Math.round(full_summ)+' REAIS');
 		$("#sum").val(Math.round(full_summ));
 		
 		flag = true;
