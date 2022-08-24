@@ -36,5 +36,5 @@
 .owl-carousel .owl-video-playing .owl-video-play-icon{display:none;}
 .owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;-webkit-transition:opacity 400ms ease;transition:opacity 400ms ease;}
 .owl-carousel .owl-video-frame{position:relative;z-index:1;}
-.owl-carousel .owl-controls .owl-nav{margin-top:30px;}
+.owl-carousel .owl-controls .owl-nav{margin-top:1px;}
 .owl-carousel .owl-controls .owl-nav > div{display:inline-block;width:40px;height:40px;text-align:center;line-height:2.8;}
