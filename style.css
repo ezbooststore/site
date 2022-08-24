@@ -57,6 +57,7 @@ img {
     height: auto;
 }
 
+
 h1,
 h2,
 h3,
@@ -939,8 +940,8 @@ preloader
 }
 
 .img-container{
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 300px;
  }
  
  .img-container img{
@@ -954,6 +955,10 @@ preloader
     -webkit-transform: scale(2);
     transform: scale(2);
  }
+
+.bgface{
+    background-color: #ffffff59;
+}
 
 #rankblock{width:50%;float:left;}
 #rankblock img{max-width:200px;width:100%;}
