@@ -369,11 +369,6 @@ input:-webkit-autofill:focus {
 .header-area {
     background: #000000 url('images/parallax-2.jpg') no-repeat scroll center center / cover;
 }
-.header-area1 {
-    background: #000000 url('images/parallax-2.jpg') no-repeat scroll center center / cover;
-}
-
-
 
 .anlge-bg {
     background: url('images/angle-bg.png') no-repeat scroll center bottom -120px / 100% auto;
