@@ -26,7 +26,12 @@
     <!-- Place favicon.ico in the root directory -->
 	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <!-- Plugin-CSS -->
-	@@ -35,8 +28,6 @@
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- Main-Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -35,7 +40,18 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu">
-	@@ -55,7 +46,7 @@
+    <div id="fb-root"></div>
+    <!--Mainmenu-area-->
+    <div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+        <div class="container">
+            <!--Logo-->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
             <!--Logo/-->
             <nav class="collapse navbar-collapse" id="primary-menu">
                 <ul class="nav navbar-nav navbar-right">
@@ -43,7 +59,17 @@
                     <li><a href="#price">Calculadora</a></li>
                     <li><a href="#reviews">Feedback </a></li>
                     <li><a href="#info">Sobre</a></li>
-	@@ -75,7 +66,7 @@
+                    <li><a href="#why-we">Por que nós? </a></li>
+                    <li><a href="#faq">F.A.Q</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--Mainmenu-area/-->
+    <!--Header-area-->
+    <header class="header-area overlay full-height relative v-center" id="home">
+        <div class="absolute anlge-bg"></div>
+        <div class="container">
             <div class="row v-center">
                 <div class="col-xs-12 col-md-7 header-text">
                     <h1>EZBOOST - UP DE PATENTE</h1>
@@ -51,7 +77,10 @@
                     <a href="#price" class="button white">Veja os preços...</a>
                 </div>
             </div>
-	@@ -86,9 +77,11 @@ <h1>EZBOOST - UP DE PATENTE</h1>
+        </div>
+    </header>
+    <!--Header-area/-->
+    <section class="section-padding gray-bg" id="price">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -61,7 +90,56 @@
                     </div>
                 </div>
             </div>
-	@@ -145,8 +138,8 @@ <h2>Calculadora de preço</h2>
+            <div align="center">
+                <div class="boostblock">
+                    <div class="boostblock">
+                        <div id="rankblock">
+                            <div id="title">Rank atual.</div>
+                                <img src="images/rank/1.png" id="pic1" alt="Rank atual" />
+                    <select id="s1" class="btn btn-default" name="s1">		
+								<option value="1" price="0">Prata - I</option> 
+								<option value="2" price="12">Prata - II</option> 
+								<option value="3" price="24">Prata - III</option> 
+								<option value="4" price="36">Prata - IV</option> 
+								<option value="5" price="48">Prata - Elite </option> 
+								<option value="6" price="60">Prata - Elite Mestre</option> 
+								<option value="7" price="75">Ouro - I</option> 
+								<option value="8" price="90">Ouro - II</option> 
+								<option value="9" price="105">Ouro - III</option> 
+								<option value="10" price="120">Ouro - Mestre</option> 
+								<option value="11" price="135">AK - I</option> 
+								<option value="12" price="150">AK - II</option> 
+								<option value="13" price="165">AK - Cruzada</option> 
+								<option value="14" price="180">Xerife</option> 
+								<option value="15" price="195">Águia - I</option> 
+								<option value="16" price="210">Águia - II</option> 
+								<option value="17" price="240">Supremo</option> 
+					</select>
+                        </div>
+                                                
+                        <div id="rankblock">
+                            <div id="title">Patente Desejada.</div>
+                                <img src="images/rank/2.png" id="pic2" alt="Classificação Desejada" />
+                        <select class="btn btn-default" id="s2" name="s2">
+								<option value="2" price="12">Prata - II</option> 
+								<option value="3" price="24">Prata - III</option> 
+								<option value="4" price="36">Prata - IV</option> 
+								<option value="5" price="48">Prata - Elite </option> 
+								<option value="6" price="60">Prata - Elite Mestre</option> 
+								<option value="7" price="75">Ouro - I</option> 
+								<option value="8" price="90">Ouro - II</option> 
+								<option value="9" price="105">Ouro - III</option> 
+								<option value="10" price="120">Ouro - Mestre</option> 
+								<option value="11" price="135">AK - I</option> 
+								<option value="12" price="150">AK - II</option> 
+								<option value="13" price="165">AK - Cruzada</option> 
+								<option value="14" price="180">Xerife</option> 
+								<option value="15" price="195">Águia I</option> 
+								<option value="16" price="210">Águia II</option> 
+								<option value="17" price="240">Supremo</option> 
+								<option value="18" price="270">Global</option> 
+		                </select> 
+                        </div>
                     <hr />
                 <fieldset>
                              Adicionais:<br>
@@ -70,7 +148,26 @@
                 </fieldset>
                     <input readonly type="text" id="summ" class="form-control" style="font-size:25px; color: rgb(105, 105, 105); text-align:center">
             </div><br>
-	@@ -174,28 +167,28 @@ <h2>FEEDBACK DE CLIENTES</h2>
+                <a href="./pay.html" target="_blank"><img src="images/order.png" alt="qr de pagamento"></a><br /><br />
+ <br><br>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="testimonial-area section-padding gray-bg overlay" id="reviews">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <br>
+                    <div class="page-title" style="    margin-bottom: 10px;">
+                        <h2>FEEDBACK DE CLIENTES</h2>
+                        <strong>
+                            <p>Alguns +rep de nossos clientes. <br />Pode encontra-los no <a href="https://www.facebook.com/groups/brazilianboost/permalink/777265679493883" target="_blank" style="color: rgb(43, 117, 202);"> nosso grupo</a> do facebook.
+                        </strong>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
                     <div class="testimonials">
                         <div class="testimonial">
@@ -99,7 +196,21 @@
                         </div>
                     </div>
                     <div style="text-align: center; font-weight: bold;">
-	@@ -217,13 +210,13 @@ <h2>FEEDBACK DE CLIENTES</h2>
+                        Veja alguns links <br>
+                        <a href="https://www.facebook.com/groups/brazilianboost/permalink/777265679493883" target="_blank" rel="noopener noreferrer">[ Nosso Grupo ] -</a> 
+                        <a href="https://www.facebook.com/groups/TrocasVendasCSGOBrasil/permalink/1237315379794874" target="_blank" rel="noopener noreferrer">[ Grupo 1 ] -</a>  
+                        <a href="https://www.facebook.com/groups/brasilskinsbr/posts/1680405205498817" target="_blank" rel="noopener noreferrer">[ Grupo 2 ] <br></a>  
+                        <a href="https://www.facebook.com/ezboostcsgo/posts/pfbid0vqs23f348vZ6M8FCHo5JnQcbijzWPdX8xDBF81ssLMG5jHan1WqEofyHVa2GWZJl" target="_blank" rel="noopener noreferrer">[ Facebook ] -</a>  
+                        <a href=" https://discord.gg/DtR8qKb" target="_blank" rel="noopener noreferrer"> [ Discord ]</a><br>
+                    </div>
+                </div>
+                <section id="comment"><div class="fb-comments bgface" data-order-by="reverse-time" data-href="http://ezboost.online/" data-width="" data-numposts="5" width="100%" ></div></section>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section-padding gray-bg" id="info">
+        <div class="container">
             <div class="row">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
@@ -113,7 +224,24 @@
                 <p></p>
                 Nosso serviço é 100% seguro e você nunca terá sua conta banida por usá-lo. Usamos o método de UP mais rápido e seguro que existe chamado VERTIGO BOOST.
                 <br>
-	@@ -250,7 +243,7 @@ <h2>POR QUE FAZER VERTIGO BOOST?</h2>
+                
+                <p></p><p></p>
+                </p>
+            <hr />
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>O QUE É O VERTIGO BOOST?</h2>
+                    </div>
+                </div>
+            </div>
+                Por que o VERTIGO BOOST é melhor que o UP de MM normal? <br>
+            Em palavras simples, VERTIGO BOOST é um método de subir de patente que garante 100% de vitória em todas as partidas. O boost funciona assim: você jogará contra jogadores AFK (observe que não são bots, são contas reais que ficarão paradas e não farão nada). Assim você vencera todas as partidas com uma pontuação de 16:0. Esse método é o mais rápido e seguro que existe! <BR><b>Você não precisa nos fornecer os dados da sua conta, você jogará na sua conta com a gente no lobby.</b>
+            <hr />
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title">
+                        <h2>POR QUE FAZER VERTIGO BOOST?</h2>
                     </div>
                 </div>
             </div>
@@ -121,7 +249,17 @@
             </div>
         </div>
     </section>
-	@@ -269,7 +262,7 @@ <h2>PORQUE NOS ESCOLHER?</h2>
+    <section class="gray-bg section-padding" id="why-we">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title"><br>
+                        <h2>PORQUE NOS ESCOLHER?</h2>
+                        <p>Nossas qualidades que nos distinguem dos serviços de terceiros.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -129,7 +267,8 @@
                         </div>
                         <h3>Sem trapaças</h3>
                         <p>Nosso método de UP é absolutamente seguro. Você não precisa mandar sua conta..</p>
-	@@ -278,7 +271,7 @@ <h3>Sem trapaças</h3>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -137,7 +276,8 @@
                         </div>
                         <h3>Preços baixos</h3>
                         <p>O preço dos nosso serviço é o mais baixo entre os concorrentes.</p>
-	@@ -287,7 +280,7 @@ <h3>Preços baixos</h3>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -145,7 +285,8 @@
                         </div>
                         <h3>Velocidade</h3>
                         <p>Nosso serviço permite que você aumente qualquer patente em 30 minutos no maximo.</p>
-	@@ -296,7 +289,7 @@ <h3>Velocidade</h3>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -153,7 +294,8 @@
                         </div>
                         <h3>Qualidade</h3>
                         <p>Podemos com segurança garantir que somos os melhores no vertigo boost!</p>
-	@@ -305,7 +298,7 @@ <h3>Qualidade</h3>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -161,7 +303,8 @@
                         </div>
                         <h3>Suporte</h3>
                         <p>Alguma duvida? Entre em contato conosco e com certeza iremos te ajudar!</p>
-	@@ -314,7 +307,7 @@ <h3>Suporte</h3>
+                    </div>
+                </div>
                 <div class="col-xs-12 col-sm-6 col-md-4">
                     <div class="box">
                         <div class="box-icon">
@@ -169,7 +312,52 @@
                         </div>
                         <h3>Anos de experiência</h3>
                         <p>Nós somos o serviço mais confiável. <br> Desde 2017 sem problemas relatados! </p>
-	@@ -367,7 +360,7 @@ <h2>PERGUNTAS FREQUENTES
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="gray-bg section-padding" id="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                    <div class="page-title"><br>
+                        <h2>PERGUNTAS FREQUENTES
+                        </h2>
+                        <p>Respostas às perguntas mais frequentes dos nossos clientes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel">
+                            <p class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true">Como é feito o processo de boost?</a>
+                            </p>
+                            <div id="collapse1" class="panel-collapse collapse in">
+                                <p>NÃO PRECISAMOS dos dados da sua conta (login e senha) - você mesmo jogará na sua conta. Mas, se você confia em nós, pode solicitar o serviço para que joguemos em sua conta, o custo do pedido pode aumentar em ate 30%.</p>
+                            
+                                <p>
+                                    São criados 2 lobbies:<BR>
+                                    lobby 1: 4 contas nossas e a sua conta;<BR>
+                                    lobby 2: 5 contas nossas.
+                                </p>
+                                
+                                <p>Depois disso é iniciado uma busca simultânea por um jogo, em um mapa raramente jogado (usamos Canals, Agency, Office, etc). Depois de encontrar o jogo, pressionamos o botão "Aceitar" em todas as contas e entramos em um jogo com todas as contas.</p>
+                            
+                                <p>Durante o jogo, absolutamente todos no servidor estarão AFK. Não é preciso fazer nada em partida, apenas espere os rounds acabarem.</p>
+                                
+                                <p>Assim, todo jogo termina em vitória com um placar de 16-0.
+                                    <br> Duração de um jogo é de 5 minutos</p>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <p class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">É possível obter um banimento VAC ou entrar ir para a fiscalização para este tipo de impulso?</a>
+                            </p>
+                            <div id="collapse2" class="panel-collapse collapse">
                                 <p>Não e não de novo.</p>
 
                                 <p>O bloqueio VAC é emitido exclusivamente para o uso de programas/scripts de terceiros que são de alguma forma introduzidos no processo do jogo.</p>
@@ -177,7 +365,48 @@
                                 <p>Minhas contas são usadas desde 2017 em boost sem nenhum tipo de restrição.</p>
 
                             </div>
-	@@ -418,7 +411,7 @@ <h2>PERGUNTAS FREQUENTES
+                        </div>
+                        <div class="panel">
+                            <p class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Quais são as garantias de que você não vai enganar?</a>
+                            </p>
+                            <div id="collapse3" class="panel-collapse collapse">
+            <ul>
+                <li>Venha conhecer nosso grupo no facebook:<br> 
+                    <a target="_blank" href="https://www.facebook.com/groups/brazilianboost">https://www.facebook.com/groups/brazilianboost</a> 
+                </li><br>
+                <li>Links de reputação:<br>
+                    <a target="_blank" href="https://www.facebook.com/groups/brasilskinsbr/posts/1680405205498817">https://www.facebook.com/groups/brasilskinsbr/posts/1680405205498817</a>
+                </li>
+                    <a target="_blank" href="https://www.facebook.com/groups/217263785494078/permalink/777265679493883">https://www.facebook.com/groups/217263785494078/permalink/777265679493883</a>
+                    <a target="_blank" href="https://www.facebook.com/groups/TrocasVendasCSGOBrasil/permalink/1237315379794874">https://www.facebook.com/groups/TrocasVendasCSGOBrasil/permalink/1237315379794874</a>
+                    <a target="_blank" href="https://www.facebook.com/ezboostcsgo/posts/101316698530453">https://www.facebook.com/ezboostcsgo/posts/101316698530453</a> <br>
+                </li><br>
+                <li>Entre no nosso discord:<br> 
+                    <a target="_blank" href=" https://discord.gg/DtR8qKb 
+                    ">https://discord.gg/DtR8qKb 
+                </a>
+                </li>
+            </ul>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <p class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Que tipos de pagamentos você aceita?</a>
+                            </p>
+                            <div id="collapse4" class="panel-collapse collapse">
+                            <p>Você pode pagar de uma das seguintes formas:</p>
+                            <ul>
+ 	                                <li>PIX</li>
+ 	                                <li>Mercado Pago</li>
+ 	                                <li>Picpay</li>
+ 	                                <li>Cryptos</li>
+ 	                                <li>Skins ( 40% Off )</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <p class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Como pedir um boost?</a>
                             </p>
                             <div id="collapse5" class="panel-collapse collapse">
